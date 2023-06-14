@@ -320,38 +320,6 @@ scv.pl.paga(adata2, basis='umap', size=75, alpha=1,figsize=(15,12),legend_fontsi
             min_edge_width=2, node_size_scale=1.5,title ='PAGA graph', save="PAGA_graph.pdf")
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
 
 
 
