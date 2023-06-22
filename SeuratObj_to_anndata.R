@@ -1,7 +1,6 @@
 setwd("<path/to/dir>")
 
 # Read the Seurat object generated from coreSC
-# install.packages('Seurat')
 library(Seurat)
 library(scrattch.io)
 
@@ -22,8 +21,8 @@ metadata$cluster <- metadata$seurat_clusters
 write.csv(
   metadata,
   file = "metadata.csv",
-  quote = F,
-  row.names = F
+  quote = FALSE,
+  row.names = FALSE
 )
 
 # write expression counts matrix
@@ -37,7 +36,7 @@ counts_matrix <- GetAssayData(
 write_dgCMatrix_csv(
   counts_matrix,
   "counts.mtx",
-  col1_name = "row_names",
+  col1_name = "",
   chunk_size = 1000
 )
 
@@ -45,13 +44,13 @@ write_dgCMatrix_csv(
 write.csv(
   seurat_obj@reductions$pca@cell.embeddings,
   file = "pca.csv",
-  quote = F,
-  row.names = F
+  quote = FALSE,
+  row.names = FALSE
 )
 
 # write gene names
 write.table(
   data.frame("gene" = rownames(counts_matrix)),
   file = "gene_names.csv",
-  quote = F, row.names = F, col.names = F
+  quote = FALSE, row.names = FALSE, col.names = FALSE
 )
