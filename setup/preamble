@@ -24,10 +24,8 @@ then
     conda config --add channels defaults
     conda config --add channels bioconda
     conda config --set channel_priority strict
-    conda create -n scvelo python== -f requirements.txt -y
+    conda create -n scvelo python==3.8 -f requirements.txt -y
 fi
 
-# TODO what explicit deps
-# TODO python version
 # TODO environment.yml
 # TODO where is scvelo in requirements.txt
