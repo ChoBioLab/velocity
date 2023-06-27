@@ -4,7 +4,9 @@
 - Run the following on terminal:
   
 ml samtools/1.17
+
 ml velocyto
+
 source activate /hpc/packages/minerva-centos7/velocyto/0.17/velocyto
 
 ### can either run directly on terminal or as an interactive job
