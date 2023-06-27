@@ -27,4 +27,3 @@ Run SeuratObj_to_anndata.R script to generate python readable files.
 
 Step 3: Run the scvelo python script
 
-
