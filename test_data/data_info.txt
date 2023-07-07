@@ -1,0 +1,11 @@
+## Data required to run the test script
+
+├── data
+│   ├──counts.mtx
+│   ├──gene_names.csv
+│   ├──metadata.csv
+│   └──pca.csv
+├── loom_files
+│   ├──J2.loom
+│   └──J3.loom
+├──test.rds
